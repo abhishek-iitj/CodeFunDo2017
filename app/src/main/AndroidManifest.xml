@@ -73,7 +73,16 @@
             android:name=".ProfileActivity_merchant"
             android:label="@string/title_activity_profile_merchant"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".fetchActivity2"></activity>
+        <activity android:name=".fetchActivity2" />
+        <activity android:name=".Main2Activity"></activity>
+
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>
