@@ -5,12 +5,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".AppController"
         android:allowBackup="true"
         android:icon="@mipmap/property"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -43,14 +46,12 @@
                 android:value=".profilePage" />
             >
         </activity>
+
         <activity
             android:name=".SessionActivity"
             android:parentActivityName=".profilePage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".profilePage" />
-            >
         </activity>
+
         <activity
             android:name=".activity_splash"
             android:theme="@style/AppTheme.NoActionBar">
@@ -60,20 +61,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".userType"
             android:parentActivityName=".MainActivity" />
+
         <activity android:name=".cutomActivity" />
+
         <activity android:name=".sessionActivityMerchant" />
+
         <activity android:name=".MerchantUpdate" />
-        <activity
-            android:name=".fetchActivity"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".ProfileActivity_merchant"
-            android:label="@string/title_activity_profile_merchant"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".fetchActivity2"></activity>
+
+        <activity android:name=".fetchActivity" />
+
+        <activity android:name=".fetchActivity2"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
