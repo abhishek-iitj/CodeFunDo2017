@@ -66,11 +66,7 @@ public class MainActivity extends ActionBarActivity {
             String[] result = new String[5];
             result = db.getRow();
             Intent intent = new Intent(MainActivity.this, fetchActivity.class);
-//            intent.putExtra("Mobile", result[4]);
-//            intent.putExtra("Password", result[3]);
-//            intent.putExtra("Name", result[0]);
-//            intent.putExtra("City", result[2]);
-//            intent.putExtra("DOB", result[1]);
+
             startActivity(intent);
             finish();
 
