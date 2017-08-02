@@ -1,0 +1,15 @@
+
+
+//$sql = "INSERT INTO users(name, mobile, dob, city, password) VALUES('akash', //'8239110707','29.12.1997','jodhpur','akash')";
+     //$sql = "INSERT INTO connections(mobile,interests) VALUES('8239110707','cricket')";
+$sql = "INSERT INTO message(username,password,phone,otp,verified) VALUES('username','password','1234567890','12345',1)";
+
+//merchant 
+$sql = "CREATE TABLE merchant(mobile int NOT NULL, password VARCHAR(30), name VARCHAR(30),address VARCHAR(250), room INT)";
+
+/$sql = "CREATE TABLE connectionsTable (mobileMerchant VARCHAR(13), mobileStudent VARCHAR(13))";
+
+//$sql = "CREATE TABLE devices (mobile varchar(100) NOT NULL,token text NOT NULL);";
+
+//$sql = "CREATE TABLE uploads (mobile varchar(100) NOT NULL, url text NOT NULL);";
+//$sql = "CREATE TABLE mess_table (mobile VARCHAR(13), password VARCHAR(30), name VARCHAR(30),address VARCHAR(250), fare VARCHAR(13), rating VARCHAR(10))";

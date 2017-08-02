@@ -1,0 +1,1152 @@
+<html lang="en">
+<head>
+
+	  <!-- Compiled and minified CSS -->
+	  <!-- Compiled and minified CSS -->
+	  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <!-- Compiled and minified JavaScript -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          
+	  <!--link rel="stylesheet" href="assets/css/materialize.min.css"-->
+		<link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
+	  <!-- Compiled and minified JavaScript -->
+	  <!--script src="assets/js/materialize.min.js"></script-->
+	  
+
+<script>
+
+	function toggle_up_down(id){
+		var a = ["about", "details", "register","contact"];
+		var element=$("."+(id));
+		for(i=0;i<4;i++){
+		
+				var ele =$("."+(a[i]));
+				ele.css("display","none");
+				
+		}	
+		
+		element.css("display","block");
+	
+	
+	
+	}
+
+	
+	  $(document).ready(function(){
+		// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		$('.modal-trigger').leanModal();
+	  });
+	  
+	$('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
+    }
+  );
+				
+</script>
+<style>
+
+@media only screen and (max-width: 1500px) {
+	.mtt{
+		margin-top:90px;
+	}
+	.mt{
+		margin-top:-90px;
+	}
+	.ml{ 
+		margin-left:-50px;
+	}
+	.clip-wrap a .para{
+		display:block;
+		position:absolute;
+		bottom:30%;
+		left:13%;
+		width:150px;
+		font-size:20px;
+		text-align:center;
+		font-weight:bold;
+		font-family:'aladin','cursive';
+		color:#E28D0A;
+		
+	}
+	.clip-wrap a img{
+		position:relative;
+		-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+		-webkit-filter: opacity(50%); /* Chrome, Safari, Opera */
+		filter: opacity(50%);
+	
+	}
+	.clip-wrap {
+		position:relative;
+	
+	}
+	.layer{
+		background-color: rgba(20, 30, 30, 0.6);padding:40px 20px 40px 20px;margin:0px;
+	}
+}
+@media only screen and (max-width: 820px) {
+		
+	.row{
+		
+	}
+	.mtt{
+		margin:0px;
+	}
+	.ml{
+		margin:0px;
+	}
+	.mt{
+		margin:0px;
+	}
+	.clip-wrap{
+		width:100%;
+		margin:0px;
+		padding:0px;
+		background:rgba(20, 30, 30, 0.6);
+		
+	}
+   	.clip-wrap a img{
+		display:none;
+	}
+	.clip-wrap a .para{
+		display:block;
+		bottom:0%;
+		position:relative;
+		width:100%;
+		left:0%;
+		margin:0%;
+		font-size:18px;
+		text-align:center;
+		font-weight:bold;
+		font-family:'aladin','cursive';
+		color:#E28D0A;
+		
+	}
+	.layer{
+		background-color: rgba(20, 30, 30, 0.6);padding:10px;margin:0px;
+	}
+}
+.clip-wrap {
+  float:left;
+	
+  }
+
+img {
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.font-large {
+  font-size: 36px;  
+}
+
+.clip-svg {
+  width: 0;
+  height: 0;
+}
+
+.clip-polygon {
+          -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          -webkit-clip-path: url("#clip-svg-demo");
+          clip-path: url("#clip-svg-demo");
+}
+
+
+body{
+	background:rgba(20, 30, 30, 1);
+	//background-image:url("images/wrksh_bg2.jpg");background-repeat:no-repeat;background-size:cover;
+	//background:black;
+}
+/**  STYLE 9 */
+
+#style-9::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0,0);
+	background-color: #524949;
+}
+
+#style-9::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+#style-9::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+@-webkit-keyframes pop_up,@-moz-keyframes pop_up,@keyframes pop_up{
+	0% {
+        -webkit-transform: scaleX(0);
+		-moz-transform: scaleX(0);
+		transform: scaleX(0);
+    }
+    100% {
+        -webkit-transform: scalex(1);
+		-moz-transform: scalex(1);
+		transform: scalex(1);
+		
+    }
+}
+
+#main{
+	
+	height:500px;
+	padding:30px;
+		
+}
+
+
+.main_class{
+
+	height:100%;width:100%;overflow-y:scroll;	
+
+}
+
+
+#workshop{
+	padding:20px 10px 20px 10px;text-align:center;
+	-webkit-animation-name:pop_up;-webkit-animation-iteration:1;-webkit-animation-duration:2s;
+	-moz-animation-name:pop_up;-moz-animation-iteration:1;-moz-animation-duration:2s;
+	animation-name:pop_up;animation-iteration:1;animation-duration:2s;
+}
+.detail{
+	padding:0px;
+}
+.contacts{
+	padding:7px;
+	margin:0px;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #E28D0A;
+    margin: 1em 0;
+    padding: 0;
+}
+@-webkit-keyframes shadow{
+	0%{	
+		box-shadow:none;
+		background:rgba(20, 30, 30, 0.4);
+	}
+	100%{
+		box-shadow:10px 10px 20px #E28D0A;
+		background:rgba(20, 30, 30, 0.9);	
+	}
+}
+@-webkit-keyframes shadow_,@-moz-keyframes shadow_,@keyframes shadow_{
+	0%{	
+		box-shadow:none;
+		
+	}
+	100%{
+		box-shadow:20px 20px 30px #E28D0A;
+			
+	}
+}
+.shadow{
+	
+	-webkit-animation-name:shadow;-webkit-animation-duration:2s;-webkit-animation-iteration:1;
+	-moz-animation-name:shadow;-moz-animation-duration:2s;-moz-animation-iteration:1;
+	animation-name:shadow;animation-duration:2s;animation-iteration:1;
+		box-shadow:10px 10px 20px #E28D0A; 	
+		background:rgba(20, 30, 30, 0.9);	
+}
+.modal{
+	background:#1A1A17;
+	height:100%;
+	width:95%;
+	z-index:900;
+	margin-top:5%;
+	-webkit-animation-duration:5s;
+	-webkit-animation-name:shadow_;
+	box-shadow:20px 20px 30px #E28D0A;
+	background:rgba(20, 30, 30, 1.0);
+	
+	overflow-y:hidden;
+	
+}
+.modal-content{
+
+	margin-top:-5px;
+	padding:20px;
+
+}	
+.navbar{
+	padding:5px 10px 5px 10px;
+	width:20%;height:100%;float:left;
+
+}
+
+
+.icon{
+	padding:5px;
+	font-size:23px;
+	font-weight:light;
+	
+	
+}
+.tag_name{
+	border:1px solid #E28D0A;
+	text-align:center;
+	
+	
+}
+.tag_name a{
+	color:#E28D0A;
+	font-size:18px;
+	font-family: 'Aladin', cursive;
+	font-weight:bold;
+	
+}
+.tag_name:hover{
+	background:#E28D0A;
+}
+.tag_name:hover a{
+	color:black;
+}
+
+.rightmenu{
+	margin-top:-20px;
+	width:80%;
+	height:80%;
+		
+	
+}
+.rightmenu:hover{
+
+	-animation-name:shadow;
+	-animation-duration:2s;
+
+
+}
+.about,.details,.register,.contact{
+	padding:0px 10px 0px 10px;
+	text-align:center;
+	overflow-y:scroll;
+	background:rgba(20, 30, 30, 1.0);
+	
+
+}
+
+	/* label color */
+   .input-field label {
+     color: #E28D0A;
+   }
+
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #E28D0A;
+   }
+   
+   .input-field input[type=password]:focus + label {
+     color: #E28D0A;
+   }
+   
+ 
+   
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #E28D0A;
+     box-shadow: 0 1px 0 0 #E28D0A;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #E28D0A;
+     box-shadow: 0 1px 0 0 #E28D0A;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #E28D0A;
+     box-shadow: 0 1px 0 0 #E28D0A;
+   }
+   
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #E28D0A;
+   }
+   
+   /* label underline focus color */
+   .input-field input[type=password]:focus {
+     border-bottom: 1px solid #E28D0A;
+     box-shadow: 0 1px 0 0 #E28D0A;
+   }
+   /* valid color */
+   .input-field input[type=password].valid {
+     border-bottom: 1px solid #E28D0A;
+     box-shadow: 0 1px 0 0 #E28D0A;
+   }
+   /* invalid color */
+   .input-field input[type=password].invalid {
+     border-bottom: 1px solid #E28D0A;
+     box-shadow: 0 1px 0 0 #E28D0A;
+   }
+	
+
+</style>
+</head>
+<body> 
+<div class="row">
+<div class="col s12 m4 l4"style="padding:30px;">
+<a class="waves-effect" href="./"style="border:1px solid #E28D0A;border-radius:50%;box-shadow: 10px 10px 30px #D78915;background:#E28D0A;color:black;font-family:'aladin','cursive';float:left;padding:10px;"><i class="fa fa-home fa-3x"></i></a>
+</div>
+<div class="col s12 m4 l4"style="padding:5px;">
+<center>
+	<p style=" letter-spacing:5px;text-shadow: 10px 10px 50px #D78915;margin-left:-30px;margin-right:-30px;font-size:30px;color:#E28D0A;font-weight:bold;font-family: 'Aladin', cursive;">WINTER TRAINING PROGRAM</p>
+</center>
+</div>
+<div class="col s12 m4 l4"style="padding:30px;">
+<center>
+<a data-target="modal_detail" href="#modal" class=" modal-trigger waves-effect waves-light btn" style="box-shadow: 10px 10px 30px #D78915;background:#E28D0A;color:black;font-family:'aladin','cursive';float:right;">DETAILS</a>
+<div id="modal_detail" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>WINTER TRAING PROGRAM</h4>
+      <p>A bunch of text</p>
+    </div>
+    
+</div>
+          
+
+</center>
+ </div>
+</div>
+
+<div class="row"style="margin-top:-20px;">
+	<div class="col s2">
+		<div class="img_wrksp" style="height:100px;">
+		</div>
+		
+		<div class="detail" style="color:#E28D0A;font-family: 'Aladin', cursive;">
+			<p style="font-size:25px;;height:auto;margin:0px;">contacts</p>
+			<hr>
+			<ul class="contacts">
+			<li>
+				
+				<p style="font-size:18px;margin:0 auto;align:center;">Sandeep Charan</p>
+				<p style="font-size:15px;">&nbsp &nbsp &nbsp+91 &nbsp 8107721741</p>
+			
+			
+			</li>
+			<li>
+				
+				<p style="font-size:18px;align:center;">Akshay Chaudhari</p>
+				<p style="font-size:15px;">&nbsp &nbsp &nbsp +91 &nbsp9462767765</p>
+			</li>
+			</ul>
+			
+		</div>
+		
+		
+	
+	
+	
+	</div>
+	<div class="col s10"id="main" > 
+		<div id="style-9"class="main_class"onmouseover="$(this).addClass('shadow');"onmouseleave="$(this).removeClass('shadow');">
+		<div class="layer">
+			<div class="row"style="padding-left:20%;">
+					
+					
+					 <!-- /clip-wrap -->
+					<div class="clip-wrap mtt ml">
+						<a class="modal-trigger waves-effect" href="#augmented">
+							<img src="assets/images/AugmentedReality.jpg" alt="demo-clip-path" width="180" height="160" class="clip-polygon">
+							<div class="para">
+								<p> Cyber<br>Forensics</p>
+							</div>
+						</a>
+					</div> <!-- /clip-wrap -->
+
+					<div class="clip-wrap ml">
+						<a class="modal-trigger waves-effect" href="#bridge">
+							<img src="assets/images/BridgeDesigning.jpg"  alt="demo-clip-path" width="180" height="160" class="clip-polygon">
+							<div class="para" style="z-index:200;">
+								<p> Mind Controlled<br>Robotics</p>
+							</div>
+						</a>
+					</div> <!-- /clip-wrap -->
+
+					<div class="clip-wrap mtt ml">
+						<a class="modal-trigger waves-effect" href="#ethical">
+							<img src="assets/images/EthicalHacking.jpg" alt="demo-clip-path" width="180" height="160" class="clip-polygon">
+							<div class="para">
+								<p>Aurdino & <Br> Microprocessor</p>
+							</div>
+						</a>
+					</div>
+
+					<!--div class="clip-wrap ml">
+						<a class="modal-trigger waves-effect" href="#placement">
+							<img src="#" alt="demo-clip-path" width="180" height="160" class="clip-polygon">
+							<div class="para">
+								<p> Placement<br>Etiquettes</p>
+							</div>
+						</a>
+					</div--> <!-- /clip-wrap -->
+					<!--div class="clip-wrap ml mtt">
+						<a class="modal-trigger waves-effect" href="#vehicle">
+							<img src="#" alt="demo-clip-path" width="180" height="160" class="clip-polygon">
+							<div class="para">
+								<p> Vehicle Overhauling</p>
+							</div>
+						</a>
+					</div--> <!-- /clip-wrap -->
+		
+					</div>
+
+					<div class="row"style="padding-left:20%;">
+
+					
+
+					<div class="clip-wrap mt ml"style="margin-left:100px;">
+						<a class="modal-trigger waves-effect" href="#serial">
+							<img src="assets/images/SerialandWirelessCommunication.jpg" alt="demo-clip-path" width="180" height="160" class="clip-polygon">
+							<div class="para">
+								<p> Ansys<br></p>
+							</div>
+						</a>
+					</div> 
+
+					
+					 
+
+					</div>
+
+
+					<svg class="clip-svg">
+						  <defs>
+								<clipPath id="clip-svg-demo" clipPathUnits="objectBoundingBox">
+									  <polygon id="hex" points="0.25 0, 0.75 0, 1 0.5, 0.75 1, 0.25 1, 0 0.5"/>
+								</clipPath>
+						  </defs>   
+					</svg>	
+				
+				<!-- Modal android  Structure -->
+					  
+					<!---MODAL FINISHES----------->
+					
+					<!-- Modal augmented Structure -->
+					  <div id="augmented" class="modal modal-fixed-footer">
+						<center>
+						<div class="row">
+						<div class="col s3"> &nbsp </div>
+							<div class="col s5"style="padding:10px 0px 60px 0px;margin:0px;height:0px;">
+								<p style=" border-width: 4px 30px 4px 30px;border-style: groove ridge dashed groove;border-color: #E28D0A;border-radius:100px 100px 0 0 ;-moz-border-radius:100px 100px 0 0 ;-webkit-border-radius:100px 100px 0 0 ;border-bottom:1px solid #E28D0A;margin-top:-5px;font-size:30px;color:#E28D0A;font-weight:bold;font-family: 'Aladin', cursive;">Cyber Forensics</p>
+							</div>
+						<div class="col s3"> &nbsp </div>	
+							<div class="col s1">
+								<a style="float:right;"href="#!" class="modal-action modal-close waves-effect btn-flat "><font style="font-weight:bold;font-size:20px;font-family: 'Aladin', cursive;color:#E28D0A;padding:5px;">X</font></a>
+							</div>
+						
+						</div>
+						</center>
+						<div class="row">
+						<div class="modal-content">
+							
+							<div class=" col s3 navbar">
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-info " ></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('about')">
+									<a href="#">About</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-bars "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('details')">
+									<a href="#">Details</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-registered "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('register')">
+									<a href="#">Register</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon">
+									<i style="color:#E28D0A;"class="fa fa-phone "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('contact')">
+									<a  href="#">Contact</a>
+								</div>
+								</div>
+								
+								
+								
+							</div>
+							
+							<div class=" col s7 rightmenu">
+							
+							<div id="style-9" class="about" style="height:100%;width:100%;z-index:100;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Introduction
+								</p>
+								<p style="font-family:'aladin','cursive';font-size:17px;color:#E28D0A;text-align:justify;">
+								
+								Introduction
+								The God created us and given us five senses, but our connections to computers are still “sensory deprived and physically limited”. Have you ever gone frustrated or bored by the traditional way of computing that is by keyboard and mouse? If yes then this is the workshop you are looking for. This workshop aims to give you an opportunity to explore surface and gesture computing along with hands on experience of the same. It will take you to the new level of computing with the following learning outcomes: <br>
+								->	Convert your normal laptop or desktop into multi-touch screen device. <br>
+								->	Multi-touch Projector. <br>
+								->	Make your own multi-touch pad. <br>
+								->	Control your laptop through hand gestures by using Microsoft Kinect. <br>
+								->	Control your mouse cursor by voice. <br>
+								->	Play virtual drum. <br>
+								->	Make your own wireless measuring tape. <br>
+								->	Capture 3D images through videos. <br>
+								->	Create your own augmented world and play with it!!<br>
+								<br><br>
+								
+								</p>
+							
+							
+							
+							</div>
+							<div id="style-9" class="details" style=" height:100%;width:100%;z-index:200;display:none;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Details
+								</p>
+								<ol style="color:#E28D0A;text-align:left;">
+									<li>&nbsp Date: 23-25th December 2016</li>
+									<li>&nbsp Duration: 3 Day [8 hrs per day]</li>
+									<li>&nbsp Venue: IIT Jodhpur</li>
+									<li>&nbsp Cost of workshop: Rs 1500/- per participant</li>
+									
+								</ol>
+								<a href="assets/pdf/pdf1.pdf" download style="color:#E28D0A;font-weight:bold;text-align:left;padding:10px;font-size:15px;">
+								</p>Click here for downloading pdf file
+								<img src="assets/images/pdf-logo.jpg" height="40" width="40"></img></p>
+								</a>
+							
+							</div>
+							
+							
+							<div id="style-9" class="register" style=" height:100%;width:100%;z-index:300;display:none;">
+							<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+							Registration
+							</p>
+							<p style="color:#E28D0A;font-size:20px;">
+							
+							<div class="input-field col s10">
+							  <input id="first_name" type="text" class="validate"style="color:#E28D0A;;">
+							  <label for="first_name">Ignus Id</label>
+							  
+							</div>
+							<div class="input-field col s10">
+							  <input id="pass" type="password"class="validate"style="color:#E28D0A;">
+							  <label for"pass">password</label>
+							</div>
+							
+							</p>
+							</div>
+							<div id="style-9" class="contact" style=" height:100%;;width:100%;z-index:600;display:none;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Contacts
+								</p>
+								<ul style="color:#E28D0A;text-align:justify;list-style-type:circle;font-weight:light;margin-top:-20px;">
+									
+									<li>&nbsp <ul> 
+									<li> &nbsp Sandeep Charan <br> &nbsp +91 8107721741 <br> &nbsp ignus@pr.org</li></ul></li>
+									<li>&nbsp <ul> 
+									<li> &nbsp Akshay Chaudhari <br> &nbsp +91 9462767765 <br> &nbsp ignus@pr.org</li></ul></li>	
+									
+								</ul>
+								<br><br><br>
+								</div>
+							
+							</div>
+							<div class="col s2">
+							</div>
+							</div>
+						  
+						  
+						  
+						  
+						</div>
+						
+						
+					  </div>
+					<!---MODAL FINISHES----------->
+					
+					<!-- Modal bridge Structure -->
+					  <div id="bridge" class="modal modal-fixed-footer">
+						<center>
+						<div class="row">
+						<div class="col s3"> &nbsp </div>
+							<div class="col s5"style="padding:10px 0px 60px 0px;margin:0px;height:0px;">
+								<p style=" border-width: 4px 30px 4px 30px;border-style: groove ridge dashed groove;border-color: #E28D0A;border-radius:100px 100px 0 0 ;-moz-border-radius:100px 100px 0 0 ;-webkit-border-radius:100px 100px 0 0 ;border-bottom:1px solid #E28D0A;margin-top:-5px;font-size:30px;color:#E28D0A;font-weight:bold;font-family: 'Aladin', cursive;">Mind Controlled Robotics</p>
+							</div>
+						<div class="col s3"> &nbsp </div>	
+							<div class="col s1">
+								<a style="float:right;"href="#!" class="modal-action modal-close waves-effect btn-flat "><font style="font-weight:bold;font-size:20px;font-family: 'Aladin', cursive;color:#E28D0A;padding:5px;">X</font></a>
+							</div>
+						
+						</div>
+						</center>
+						<div class="row">
+						<div class="modal-content">
+							
+							<div class=" col s3 navbar">
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-info " ></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('about')">
+									<a href="#">About</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-bars "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('details')">
+									<a href="#">Details</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-registered "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('register')">
+									<a href="#">Register</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon">
+									<i style="color:#E28D0A;"class="fa fa-phone "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('contact')">
+									<a  href="#">Contact</a>
+								</div>
+								</div>
+								
+								
+								
+							</div>
+							
+							<div class=" col s7 rightmenu">
+							
+							<div id="style-9" class="about" style="height:100%;width:100%;z-index:100;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Introduction
+								</p>
+								<p style="font-family:'aladin','cursive';font-size:17px;color:#E28D0A;text-align:justify;">
+								
+								This workshop will give you a unique opportunity to experience a hands-on application of a Civil Engineering Mini Project. Includes Practical sessions on CAD based Bridge Design and Testing. Participants will gain thorough knowledge of various technical concepts involved in Civil Engineering. Helps in making the best innovative bridges with designing and fabrication. Finally, Bridge Design Contest is conducted to provide the participants a real-life introduction to Civil Engineering. Faculty will discuss with students how to implement the gained knowledge for projects in future sharing innovative ideas. Bridges will be fabricated and tested for maximum stress and load.
+								<br><br>
+								
+								</p>
+							
+							
+							
+							</div>
+							<div id="style-9" class="details" style=" height:100%;width:100%;z-index:200;display:none;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Details
+								</p>
+								<ol style="color:#E28D0A;text-align:left;">
+									<li>&nbsp Date: 23-25th December 2016</li>
+									<li>&nbsp Duration: 3 Day [8 hrs per day]</li>
+									<li>&nbsp Venue: IIT Jodhpur</li>
+									<li>&nbsp Cost of workshop: Rs 1500/- per participant</li>
+									
+								</ol>
+								<a href="assets/pdf/pdf1.pdf" download style="color:#E28D0A;font-weight:bold;text-align:left;padding:10px;font-size:15px;">
+								</p>Click here for downloading pdf &nbsp &nbsp
+								<img src="assets/images/pdf-logo.jpg" height="40" width="40"></img></p>
+								</a>
+							
+							</div>
+							
+							
+							<div id="style-9" class="register" style=" height:100%;width:100%;z-index:300;display:none;">
+							<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+							Registration
+							</p>
+							<p style="color:#E28D0A;font-size:20px;">
+							
+							<div class="input-field col s10">
+							  <input id="first_name" type="text" class="validate"style="color:#E28D0A;;">
+							  <label for="first_name">Ignus Id</label>
+							  
+							</div>
+							<div class="input-field col s10">
+							  <input id="pass" type="password"class="validate"style="color:#E28D0A;">
+							  <label for"pass">password</label>
+							</div>
+							
+							</p>
+							</div>
+							<div id="style-9" class="contact" style=" height:100%;;width:100%;z-index:600;display:none;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Contacts
+								</p>
+								<ul style="color:#E28D0A;text-align:justify;list-style-type:circle;font-weight:light;margin-top:-20px;">
+									
+									<li>&nbsp <ul> 
+									<li> &nbsp Sandeep Charan <br> &nbsp +91 8107721741 <br> &nbsp ignus@pr.org</li></ul></li>
+									<li>&nbsp <ul> 
+									<li> &nbsp Akshay Chaudhari <br> &nbsp +91 9462767765 <br> &nbsp ignus@pr.org</li></ul></li>	
+									
+								</ul>
+								<br><br><br>
+								</div>
+							
+							</div>
+							<div class="col s2">
+							</div>
+							</div>
+						  
+						  
+						  
+						  
+						</div>
+						
+					  </div>
+					<!---MODAL FINISHES----------->
+					
+					<!-- Modal ethical  Structure -->
+					  <div id="ethical" class="modal modal-fixed-footer">
+						<center>
+						<div class="row">
+						<div class="col s3"> &nbsp </div>
+							<div class="col s5"style="padding:10px 0px 60px 0px;margin:0px;height:0px;">
+								<p style=" border-width: 4px 30px 4px 30px;border-style: groove ridge dashed groove;border-color: #E28D0A;border-radius:100px 100px 0 0 ;-moz-border-radius:100px 100px 0 0 ;-webkit-border-radius:100px 100px 0 0 ;border-bottom:1px solid #E28D0A;margin-top:-5px;font-size:30px;color:#E28D0A;font-weight:bold;font-family: 'Aladin', cursive;">Aurdino & Microprocessor</p>
+							</div>
+						<div class="col s3"> &nbsp </div>	
+							<div class="col s1">
+								<a style="float:right;"href="#!" class="modal-action modal-close waves-effect btn-flat "><font style="font-weight:bold;font-size:20px;font-family: 'Aladin', cursive;color:#E28D0A;padding:5px;">X</font></a>
+							</div>
+						
+						</div>
+						</center>
+						<div class="row">
+						<div class="modal-content">
+							
+							<div class=" col s3 navbar">
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-info " ></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('about')">
+									<a href="#">About</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-bars "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('details')">
+									<a href="#">Details</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-registered "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('register')">
+									<a href="#">Register</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon">
+									<i style="color:#E28D0A;"class="fa fa-phone "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('contact')">
+									<a  href="#">Contact</a>
+								</div>
+								</div>
+								
+								
+								
+							</div>
+							
+							<div class=" col s7 rightmenu">
+							
+							<div id="style-9" class="about" style="height:100%;width:100%;z-index:100;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Introduction
+								</p>
+								<p style="font-family:'aladin','cursive';font-size:17px;color:#E28D0A;text-align:justify;">
+								
+								Ever had a dream to become a professional hacker? IGNUS 2k16,IIT Jodhpur in association with CyberCure Technologies Pvt. Ltd., Delhi has come down to provide you a great opportunity to master hacking technologies in just 2 days by India's 5th ranked hacker, Sangeet Chopra. 
+								<br>
+								"To beat a hacker,you need to think like a hacker".The accredited workshop will immerse you into the Hacker Mindset so that you will experience a hands-on environment where we introduce you to the current popular attacks and explain the techniques to counter them.
+								<br><br>
+								</p>
+							
+							
+							
+							</div>
+							<div id="style-9" class="details" style=" height:100%;width:100%;z-index:200;display:none;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Details
+								</p>
+								<ol style="color:#E28D0A;text-align:left;">
+									<li>&nbsp Date: 23-57th December 2016</li>
+									<li>&nbsp Duration: 3 Day [8 hrs per day]</li>
+									<li>&nbsp Venue: IIT Jodhpur</li>
+									<li>&nbsp Cost of workshop: Rs 1500/- per participant</li>
+									
+								</ol>
+								<a href="assets/pdf/pdf1.pdf" download style="color:#E28D0A;font-weight:bold;text-align:left;padding:10px;font-size:15px;">
+								</p>Click here for downloading pdf file
+								<img src="assets/images/pdf-logo.jpg" height="40" width="40"></img></p>
+								</a>
+							
+							</div>
+							
+							
+							<div id="style-9" class="register" style=" height:100%;width:100%;z-index:300;display:none;">
+							<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+							Registration
+							</p>
+							<p style="color:#E28D0A;font-size:20px;">
+							
+							<div class="input-field col s10">
+							  <input id="first_name" type="text" class="validate"style="color:#E28D0A;;">
+							  <label for="first_name">Ignus Id</label>
+							  
+							</div>
+							<div class="input-field col s10">
+							  <input id="pass" type="password"class="validate"style="color:#E28D0A;">
+							  <label for"pass">password</label>
+							</div>
+							
+							</p>
+							</div>
+							<div id="style-9" class="contact" style=" height:100%;;width:100%;z-index:600;display:none;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Contacts
+								</p>
+								<ul style="color:#E28D0A;text-align:justify;list-style-type:circle;font-weight:light;margin-top:-20px;">
+									
+									<li>&nbsp <ul> 
+									<li> &nbsp Sandeep Charan <br> &nbsp +91 8107721741 <br> &nbsp ignus@pr.org</li></ul></li>
+									<li>&nbsp <ul> 
+									<li> &nbsp Akshay Chaudhari <br> &nbsp +91 9462767765 <br> &nbsp ignus@pr.org</li></ul></li>	
+									
+								</ul>
+								<br><br><br>
+								</div>
+							
+							</div>
+							<div class="col s2">
+							</div>
+							</div>
+						  
+						  
+						  
+						  
+						</div>
+						
+					  </div>
+					<!---MODAL FINISHES----------->
+					
+					
+					<!---MODAL FINISHES----------->
+					
+					
+					<!---MODAL FINISHES----------->
+					
+					<!-- Modal serial  Structure -->
+					  <div id="serial" class="modal modal-fixed-footer">
+						<center>
+						<div class="row">
+						<div class="col s3"> &nbsp </div>
+							<div class="col s5"style="padding:10px 0px 60px 0px;margin:0px;height:0px;">
+								<p style=" border-width: 4px 30px 4px 30px;border-style: groove ridge dashed groove;border-color: #E28D0A;border-radius:100px 100px 0 0 ;-moz-border-radius:100px 100px 0 0 ;-webkit-border-radius:100px 100px 0 0 ;border-bottom:1px solid #E28D0A;margin-top:-5px;text-align:center;font-size:30px;color:#E28D0A;font-weight:bold;font-family: 'Aladin', cursive;">Ansys</p>
+							</div>
+						<div class="col s3"> &nbsp </div>	
+							<div class="col s1">
+								<a style="float:right;"href="#!" class="modal-action modal-close waves-effect btn-flat "><font style="font-weight:bold;font-size:20px;font-family: 'Aladin', cursive;color:#E28D0A;padding:5px;">X</font></a>
+							</div>
+						
+						</div>
+						</center>
+						<div class="row">
+						<div class="modal-content">
+							
+							<div class=" col s3 navbar">
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-info " ></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('about')">
+									<a href="#">About</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-bars "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('details')">
+									<a href="#">Details</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon" >
+									<i style="color:#E28D0A;"class="fa fa-registered "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('register')">
+									<a href="#">Register</a>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="col s3 icon">
+									<i style="color:#E28D0A;"class="fa fa-phone "></i>
+								</div>
+								<div class="col s7 tag_name"onclick="toggle_up_down('contact')">
+									<a  href="#">Contact</a>
+								</div>
+								</div>
+								
+								
+								
+							</div>
+							
+							<div class=" col s7 rightmenu">
+							
+							<div id="style-9" class="about" style="height:100%;width:100%;z-index:100;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Introduction
+								</p>
+								<p style="font-family:'aladin','cursive';font-size:17px;color:#E28D0A;text-align:justify;">
+								
+								The workshop aims to improve the analytical and problem solving skills of students, and complements the new Technology curriculum by providing a project-based learning activity.The workshop will comprise of the essential theory with hands on experiments by the experts to improve the understanding of this highly technical field. This will motivate the students to take up the challenges in this field .This Workshop includes EEPROM programming, Serial Communication, Wireless communication and wireless controlling of robots, interfacing with LCD displays, PC & MCUs etc.
+								<br><br>
+								</p>
+							
+							
+							
+							</div>
+							<div id="style-9" class="details" style=" height:100%;width:100%;z-index:200;display:none;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Details
+								</p>
+								<ol style="color:#E28D0A;text-align:left;">
+									<li>&nbsp Date: 23-25th December 2016</li>
+									<li>&nbsp Duration: 3 Day [8 hrs per day]</li>
+									<li>&nbsp Venue: IIT Jodhpur</li>
+									<li>&nbsp Cost of workshop: Rs 1500/- per participant</li>
+									
+								</ol>
+								
+								<a href="assets/pdf/pdf1.pdf" download style="color:#E28D0A;font-weight:bold;text-align:left;padding:10px;font-size:15px;">
+								</p>Click here for downloading pdf &nbsp &nbsp
+								<img src="assets/images/pdf-logo.jpg" height="40" width="40"></img></p>
+								</a>
+							
+							</div>
+							
+							
+							<div id="style-9" class="register" style=" height:100%;width:100%;z-index:300;display:none;">
+							<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+							Registration
+							</p>
+							<p style="color:#E28D0A;font-size:20px;">
+
+							<div class="input-field col s10">
+							  <input id="first_name" type="text" class="validate"style="color:#E28D0A;;">
+							  <label for="first_name">Ignus Id</label>
+							  
+							</div>
+							<div class="input-field col s10">
+							  <input id="pass" type="password"class="validate"style="color:#E28D0A;">
+							  <label for"pass">password</label>
+							</div>
+							
+
+							</p>
+							</div>
+							<div id="style-9" class="contact" style=" height:100%;;width:100%;z-index:600;display:none;">
+								<p style="font-family:'aladin','cursive';font-size:30px;color:#E28D0A;padding:0px;">
+								Contacts
+								</p>
+								<ul style="color:#E28D0A;text-align:justify;list-style-type:circle;font-weight:light;margin-top:-20px;">
+									
+									<li>&nbsp <ul> 
+									<li> &nbsp Sandeep Charan <br> &nbsp +91 8107721741 <br> &nbsp ignus@pr.org</li></ul></li>
+									<li>&nbsp <ul> 
+									<li> &nbsp Akshay Chaudhari <br> &nbsp +91 9462767765 <br> &nbsp ignus@pr.org</li></ul></li>	
+									
+								</ul>
+								<br><br><br>
+								</div>
+							
+							</div>
+							<div class="col s2">
+							</div>
+							</div>
+						  
+						  
+						  
+						  
+						</div>
+						
+					  </div>
+					<!---MODAL FINISHES----------->
+					
+					<!---MODAL FINISHES----------->
+					
+					<!---MODAL FINISHES----------->
+					
+				
+				
+				
+				
+			
+				
+			
+			</div>
+			
+			
+		</div>
+		
+		
+		</div>
+	</div>
+
+
+	
+	
+</body>
+</html>
